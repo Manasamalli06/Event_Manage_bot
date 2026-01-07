@@ -17,7 +17,7 @@ def load_pdf_text(pdf_path):
         text += page.extract_text() + "\n"
     return text
 
-pdf_text = load_pdf_text(r"E:\study materials\hackathon rag.pdf")
+pdf_text = load_pdf_text(r"your_rag_file_path as pdf")
 chunks = pdf_text.split("\n\n")
 
 # ---------- EMBEDDINGS + VECTOR STORE ----------
